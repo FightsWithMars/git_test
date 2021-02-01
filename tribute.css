@@ -8,7 +8,7 @@ main {
     text-align: center;
   }
   
-  #div-img {
+  #img-div {
     background-color: white;
     margin: auto;
     width: auto;
@@ -19,7 +19,7 @@ main {
   #image {
     margin: auto;
     padding: auto;
-    maxwidth: 90%;
+    max-width: 90%;
     height: auto;
     display: block;
   }
@@ -46,6 +46,14 @@ main {
     width: 400px;
     margin: auto;
     margin-bottom: 20px;
+  }
+  
+  #tribute-para {
+    font-size: 20px;
+    font-weight: bold;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
   }
   
   #tribute-link {
