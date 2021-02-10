@@ -1,0 +1,106 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', Arial, sans-serif;
+  }
+  
+  
+  
+  #main-doc {
+    margin-top: 10px;
+  }
+  
+  .main-section {
+    
+  }
+  
+  .main-section header {
+    font-size: 30px;
+    margin-left: 15px;
+  }
+  
+  .main-section p {
+    padding-left: 30px;
+  }
+  
+  .main-section ul {
+    padding-left: 60px;
+  }
+  
+  .main-section ul ul {
+    padding-left: 60px;
+    list-style-type: circle;
+  }
+  
+  .main-section li {
+    padding-bottom: 10px;
+  }
+  
+  .main-section code {
+    display: block;
+    width: 50%;
+    background-color: #F7F7F7;
+    padding: 20px;
+    margin: 20px 0 20px 60px;
+    border-radius: 5px;
+  }
+  
+  #navbar {
+    display: block;
+    border: 5px solid gray;
+    border-width: 0 2px 0 0;
+    min-width: 250px;
+    width: 250px;
+    height: 100%;
+    overflow: auto;
+    position: absolute;
+    position: fixed;
+    margin-top: 10px;
+    left: 0;
+    top: 0;
+  }
+  
+  #navbar header {
+    display: block;
+    font-size: 30px;
+    margin-left: 10px;
+    
+  }
+  
+  #leftside {
+    float: none;
+    width: 300px;
+  }
+  
+  #navbar ul {
+    height: 80%;
+    list-style-type: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+  }
+  
+  #navbar li {
+    font-size: 18px;
+    border-top: 2px solid black;
+    margin-left: -40px;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+  }
+  
+  #navbar a {
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+    
+  }
+  
+  .nav-links {
+    
+  }
+  
+  @media screen and (min-width: 480px) {
+    #leftside {width: 250px; float: left;}
+    #main-doc {margin-left: 250px;}
+  }
