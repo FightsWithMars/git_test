@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Page Ver. 2</title>
+    <link rel="stylesheet" href="port-page2.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/login-black.jpg" alt="login image">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"> </span>
+        </button>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">My Services</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About Me</a></li>
+                <li class="nav-item"><a href="#work" class="nav-link">My Work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro" id="home">
+        <h1 class="section-title section-title-intro">Welcome to <strong>Fights with Mars</strong></h1>
+        <p class="section-subtitle section-subtitle-intro">front of page</p>
+        <img src="images/FWM-Image.jpg" alt="Spaceship shooting Mars" class="intro-img">
+
+    </section>
+    
+    <section class="my-services" id="services">
+        <h2 class="section-title section-title-services">What I do</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Design + Development</h3>
+                <p>I received his e-mail responses and, two days later, hit nine out of 10 free throws for the first time in
+                    my life. Then, on Christmas Eve, I went bowling and realized that many of the same principles applied.
+                    I scored 124, my first time over 100 and an Everest above my usual 50–70.
+                    13 Upon returning home, I
+                    immediately went outside and sunk the first two 3-pointers of my life. For Lakers games with the Roses,
+                    I now see a ballet of kinesthetic beauty that was invisible before. That’s a hell of a lot of fun.</p>
+            </div>
+
+            <div class="service">
+                <h3>E-Commerce</h3>
+                <p>How would you like to light a fire perfectly and have it burn for 3–7 hours without adding more wood?
+                    It requires forgetting everything you’ve learned about starting fires.
+                    Now, I can make a raging furnace of epic proportions, a crackling and screaming banshee of lifegiving heat…but it lasts for a euphoric five minutes. Then the real fun begins: the fiddling and fussing,
+                    poking and prodding every five minutes thereafter for the next hour to keep the charred remains
+                    clinging to life.</p>
+            </div>
+
+            <div class="service">
+                <h3>WordPress</h3>
+                <p>I was in the Boy Scouts and learned the ropes: tons of paper and tinder at the bottom, building
+                    upward like a tepee with the smallest kindling at the bottom and the biggest logs at the top. It’s how
+                    fires are built, right?
+                    Let’s call this the “tepee” fire.
+                    The alternative is the “upside-down” fire</p>
+            </div>
+        </div>
+
+        <a href="#work" class="btn">My Work</a>
+
+    </section>
+
+    <section class="about-me" id="about">
+        <h2 class="section-title section-title-about">Who I am</h2>
+        <p class="section-subtitle section-subtitle-about">This is what I'm all about.</p>
+
+        <div class="about-me-body">
+            <p>Cardinal Giuseppe Mezzofanti, born 1774, was called “the Devil” on many occasions.
+                The charming Italian could speak at least 39 languages and, by some accounts, had been tested in 72.
+                As arguably the world’s most famous hyperpolyglot, he was also systematic.</p>
+            <p>Second, and related to deconstruction: instead of using grammar books, he had native speakers of
+                each language recite the Lord’s Prayer. This short passage gave him an overview of nearly all important
+                grammatical structures (direct object, indirect object, noun cases, possessives, etc.):</p> 
+        </div>
+
+        <img src="images/FWM-Image.jpg" alt="Spaceship shooting Mars" class="about-me-img">
+    </section>
+
+    <section class="my-work" id="work">
+        <h2 class="section-title">Who I am</h2>
+        <p class="section-subtitle section-subtitle-work">I was once en route to Istanbul and did the 12-sentence audit with a friendly Turk across the aisle</p>
+
+        <div class="portfolio">
+            <!---Portfolio Item 01-->
+            <a href="#" class="portfolio-item">
+                <img src="images/FWM-Image.jpg" alt="Spaceship shooting Mars" class="portfolio-img">
+            </a>
+            <!---Portfolio Item 02-->
+            <a href="#" class="portfolio-item">
+                <img src="images/FWM-Image.jpg" alt="Spaceship shooting Mars" class="portfolio-img">
+            </a>
+            <!---Portfolio Item 03-->
+            <a href="#" class="portfolio-item">
+                <img src="images/FWM-Image.jpg" alt="Spaceship shooting Mars" class="portfolio-img">
+            </a>            
+            <!---Portfolio Item 04-->
+            <a href="#" class="portfolio-item">
+                <img src="images/FWM-Image.jpg" alt="Spaceship shooting Mars" class="portfolio-img">
+            </a>
+            <!---Portfolio Item 05-->
+            <a href="#" class="portfolio-item">
+                <img src="images/FWM-Image.jpg" alt="Spaceship shooting Mars" class="portfolio-img">
+            </a>
+            <!---Portfolio Item 06-->
+            <a href="#" class="portfolio-item">
+                <img src="images/FWM-Image.jpg" alt="Spaceship shooting Mars" class="portfolio-img">
+            </a>      
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <a href="mailto:fightswithmars@gmail.com" class="footer-link">Get in Touch!</a>
+        <ul class="social-list">
+            <li class="social-list-item"><a class="social-list-link" href="">Facebook</a></li>
+            <li class="social-list-item"><a class="social-list-link" href="">Twitter</a></li>
+            <li class="social-list-item"><a class="social-list-link" href="">Github</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        navToggle.addEventListener('click',() => {
+            document.body.classList.toggle('nav-open');
+        })
+
+        navLinks.forEach(link =>
+            link.addEventListener('click', () => {
+                document.body.classList.remove('nav-open');
+            }))
+
+    </script>
+    
+    
+</body>
+</html>
